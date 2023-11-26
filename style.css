@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+}
+
+body {
+  background-color: var(--DarkBlue);
+  margin: 0px;
+  padding: 0px;
+  /* font-family: 'Manrope'; */
+}
+
+h2 {
+  color: var(--NeonGreen);
+  letter-spacing: 0.2em;
+}
+
+p {
+  color: var(--LightCyan);
+  font-size: 28px;
+}
+
+#advice-container {
+  width: 500px;
+  height: 300px;
+  background-color: var(--DarkGrayishBlue);
+  border-radius: 12px;
+  margin-top: 15em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+#circle-button {
+  height: 60px;
+  width: 60px;
+  background-color: var(--NeonGreen);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 62px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#circle-button:hover {
+  box-shadow: 0 0 50px var(--NeonGreen);
+}
+
+/* Media Query */
+@media screen and (max-width: 375px) {
+  #advice-container {
+    width: 300px;
+    height: 400px;
+  }
+  #circle-button {
+    height: 60px;
+    width: 60px;
+    background-color: var(--NeonGreen);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #circle-button:hover {
+    box-shadow: 0 0 50px var(--NeonGreen);
+  }
+}
